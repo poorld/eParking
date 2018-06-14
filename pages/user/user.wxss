@@ -1,0 +1,95 @@
+/* pages/User/user.wxss */
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: #0066cc;
+}
+
+.userinfo-avatar {
+  margin: auto;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.bg text {
+  margin: auto;
+}
+
+.overage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+  justify-content: center;
+}
+
+.overage view {
+  margin: auto;
+}
+
+.overage-header {
+  font-size: 23px;
+}
+
+.overage-amount {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.overage-desc {
+  padding: 5px;
+  font-size: 15px;
+  border-style:solid;
+  border-color: #C1C1C1;
+  border-radius: 10px;
+}
+
+.btn-charge {
+  margin-top: 50px;
+  width: 90%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+  /* background-color: #cccccc; */
+  /* border-color: #C6E2FF; */
+  height: 300px;
+}
+
+.tapbar {
+  width: 100%;
+  float: left;
+  /* 文字右移10  */
+  text-indent: 10px;
+  margin-top: 1px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+
+.line {
+  height: 1px;
+  background-color: #7D7D7D;
+}
+
+.text_style{
+  color: #B5B5B5;
+  float: right;
+  margin-right: 10px;
+}
+

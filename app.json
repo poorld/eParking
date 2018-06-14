@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/user/user",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0066cc",
+    "navigationBarTitleText": "共享车位",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#272727",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "附近车位",
+        "iconPath": "/images/dw.jpg",
+        "pageTum": "navigate",
+        "selectedIconPath": "/images/dw-1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "pageTum": "redirect",
+        "iconPath": "/images/me-0.jpg",
+        "selectedIconPath": "/images/me-1.jpg"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "历史记录",
+        "pageTum": "redirect",
+        "iconPath": "/images/lishi2.png",
+        "selectedIconPath": "/images/lishi.jpg"
+      }
+    ]
+  }
+}

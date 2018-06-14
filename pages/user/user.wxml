@@ -1,0 +1,53 @@
+
+<view class="container">
+    <view class='bg'>
+      <image class="userinfo-avatar" src='{{avatarUrl}}'></image>
+      <text>{{nickName}}</text>
+    </view>
+    <view class="overage">
+        <view>
+            <text class="overage-header">我的余额（元）</text>
+        </view>
+        <view>
+            <text class="overage-amount">{{overage}}</text>
+        </view>
+        <view>
+            <text bindtap="overageDesc" class="overage-desc">余额说明</text>
+        </view>       
+    </view>
+
+    <button bindtap="chongzhi" open-type="getUserInfo" type='primary' class="btn-charge">{{chongzhi}}</button>
+
+    <!-- <button bindtap='check'>检测登录</button> -->
+
+    <view class='info'>
+
+      <view class="my-phone tapbar">
+        <text>手机号</text>
+        <text class='text_style'>{{phonenumber}}</text>
+      </view>
+
+      <view class='line'></view>
+
+      <view class="my-cart tapbar">
+        <text>车牌号</text>
+        <text class='text_style'>{{cartnumber}}</text>
+      </view>
+
+      <view class='line'></view>
+
+      <view bindtap="showTicket" class="my-ticket tapbar">
+        <text>我的用车券</text>
+        <text><text class="text_style">{{ticket}}张></text></text>
+      </view>
+
+      <view class='line'></view>
+
+      <view bindtap="showDeposit" class="my-deposit tapbar">
+        <text>我的押金</text>
+        <text><text class="text_style">99元，押金退款></text></text>
+      </view>
+
+      <view class='line'></view>
+    </view>
+</view>

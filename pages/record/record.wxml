@@ -1,0 +1,23 @@
+<view class='laji'>
+  <view wx:if="{{recordlist}}">
+    <block wx:for="{{recordlist}}">
+      <view class='content'>
+        <view class='money'>
+          <text>￥{{item.money}}</text>
+        </view>
+        <view class='address'>
+          <text>{{item.address}}</text>
+        </view>
+        <view class='time'>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view wx:else>
+    暂时没有数据哦!
+  </view>
+</view>
+<view class='button'>
+  <button type='primary' bindtap="charge" class="btn-charge">刷新记录</button>
+</view>

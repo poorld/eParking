@@ -1,0 +1,40 @@
+<!--pages/Map/map.wxml-->
+<view class='content'>
+  <map id='map' latitude='{{latitude}}' longitude='{{longitude}}' scale='{{scale}}' controls='{{controls}}' bindcontroltap='bindcontroltap' polyline="{{polyline}}" markers="{{markers}}" bindmarkertap="bindmarkertap" bindregionchange='bindregionchange' show-location>
+    <cover-view class='sb'></cover-view>
+    <cover-view class="{{showView?'bright789_view_show':'bright789_view_hide'}}">
+      <cover-view class='container'>
+        <cover-view class='bg'>
+          <cover-image src="/images/close.gif" class='close' bindtap='onChangeShowState'></cover-image>
+          <!-- 头像 -->
+          <cover-image class="userinfo-avatar" src='{{userportrait}}' bindtap='onChangeShowState'></cover-image>
+          <cover-view class='number'>
+            {{nickName}}
+          </cover-view>
+          <cover-view class='time'>
+            <!--计费  -->
+            <cover-view class='time-tile'>
+              {{billing}}
+            </cover-view>
+            <cover-view class='time-content'>
+            <!-- 时分秒  -->
+              {{hours}}:{{minuters}}:{{seconds}}
+            </cover-view>
+            <!-- 停车时长 -->
+            <cover-view>
+              {{text1}}{{sumhours}}{{summinuters}}{{sumseconds}}
+            </cover-view>
+            <!-- 本次收费 -->
+            <cover-view>
+                {{text2}}{{money}}
+            </cover-view>
+          </cover-view>
+          <cover-view class="endride">
+            <cover-view class='endStop' bindtap='endRide'>结束停车</cover-view>
+
+          </cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+  </map>
+</view>

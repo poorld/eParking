@@ -1,0 +1,23 @@
+
+.laji {
+  margin-bottom: 45px;
+}
+.content {
+  background-color: #CAE1FF;
+  border-radius: 10px;
+  text-indent: 10px;
+  text-align: center;
+  margin: 3px;
+}
+.money {
+  font-size: 17px;
+}
+.time {
+  font-size: 0.8em;
+}
+
+.btn-charge {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
